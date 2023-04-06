@@ -1,6 +1,10 @@
-<h1>Analytics</h1>
+<header>
+  <h1 class="h1">Analytics</h1>
+</header>
 
-<div data-controller="analytics" data-analytics-access-token="<%= @report_embed_config[:token] %>" data-analytics-embed-url="<%= @report_embed_config[:reports_detail][:embed_url] %>" >
-  <section data-analytics-target="container">
-  </section>
-</div>
+<main>
+  <div data-controller="analytics" data-analytics-url-value="/load-report" >
+    <section data-analytics-target="container" class="powerbi-report-container">
+    </section>
+  </div>
+</main>

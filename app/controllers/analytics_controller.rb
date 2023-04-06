@@ -1,5 +1,8 @@
 class AnalyticsController < ApplicationController
   def index
+  end
+
+  def load_report
     client_id = '278174c7-f71a-4ab2-bc89-cec8f35743fd'
     client_secret = 'FjE8Q~GenjpwRJTmo.IXLChSVC5ySZMfl~OX0cHO'
     workspace_id = '37eb2e81-7154-474e-98b7-663237ebfe67'
@@ -47,5 +50,7 @@ class AnalyticsController < ApplicationController
         token: result['token'],
         expiry: result['expiration']
       }
+
+      render json: @report_embed_config
   end
 end
