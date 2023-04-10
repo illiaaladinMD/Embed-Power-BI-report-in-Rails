@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
-  root 'analytics#index'
+  root 'analytics#index', as: 'index'
 
-  get '/load-report', to: 'analytics#load_report'
+  get '/load-embed-config', to: 'analytics#load_embed_config'
 end
