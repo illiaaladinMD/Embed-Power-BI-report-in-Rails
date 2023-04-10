@@ -1,24 +1,12 @@
-# README
+# Embed Power BI report in Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hi! This is an example project for the article about the embedding Power BI into Rails app. Here you can discover the flow of embedding and check the result by running the project locally.
 
-Things you may want to cover:
+## Setup
 
-* Ruby version
+To setup the project you have to clone the repository and have Docker installed on you machine.
+Then run:
+1. `docker-compose build`
+2. `docker-compose up`
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Thats it! Once the project is up and running you can navigate to `localhost:3000` in your browser and check the reult of embedding.
